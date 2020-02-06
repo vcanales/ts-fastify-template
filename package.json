@@ -7,7 +7,9 @@
   "scripts": {
     "test": "jest test",
     "build": "tsc",
-    "lint": "eslint --ext .ts src/"
+    "lint": "eslint --ext .ts src/",
+    "start": "npx ts-node src/index.ts",
+    "start:dev": "npx nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.test.ts' --exec 'npx ts-node' src/index.ts"
   },
   "author": "Vicente Canales <vicente@canales.io>",
   "license": "UNLICENSED",
