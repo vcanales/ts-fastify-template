@@ -1,6 +1,6 @@
 # Fastify + TypeScript Teamplate
 
-This is a basic template with the basic's you'll need when starting a new Fastify project built with TypeScript.
+This is a basic template with the basic's you'll need when starting a new [Fastify](https://fastify.io) project built with [TypeScript](https://www.fastify.io/docs/latest/TypeScript/#typescript).
 
 Also includes:
 
