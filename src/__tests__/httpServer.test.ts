@@ -4,8 +4,8 @@ import httpServer from '../httpServer';
 describe('http server', () => {
   let fastify: Fastify.FastifyInstance;
 
-  beforeEach(() => {
-    fastify = httpServer();
+  beforeEach(async () => {
+    fastify = await httpServer();
   });
 
   afterEach(() => {
