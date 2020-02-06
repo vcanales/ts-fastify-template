@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "test": "jest test",
+    "test": "jest",
     "build": "tsc",
     "lint": "eslint --ext .ts src/",
     "start": "npx ts-node src/index.ts",
