@@ -1,0 +1,54 @@
+{
+  "name": "analitica-pageviews",
+  "version": "1.0.0",
+  "description": "Analitica's pageview script and endpoint",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest test",
+    "build": "tsc",
+    "lint": "eslint --ext .ts src/"
+  },
+  "author": "Vicente Canales <vicente@canales.io>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "fastify": "^2.12.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {}
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}
