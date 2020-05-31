@@ -1,11 +1,11 @@
 import Fastify from 'fastify';
-import httpServer from '../httpServer';
+import start from '../';
 
 describe('http server', () => {
   let fastify: Fastify.FastifyInstance;
 
   beforeEach(async () => {
-    fastify = await httpServer();
+    fastify = await start();
   });
 
   afterEach(() => {
