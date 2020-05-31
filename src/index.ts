@@ -1,6 +1,7 @@
 import Fastify from 'fastify';
 
 const { PORT = '3000' } = process.env;
+
 const fastify = Fastify({ logger: true });
 
 export default async function start(): Promise<Fastify.FastifyInstance> {
