@@ -18,3 +18,5 @@ export default async function start(): Promise<Fastify.FastifyInstance> {
 
   return fastify;
 }
+
+start();
