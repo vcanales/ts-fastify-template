@@ -27,7 +27,7 @@
     "nodemon": "^2.0.5",
     "prettier": "^2.1.2",
     "ts-jest": "^25.5.1",
-    "ts-node": "^9.0.0",
+    "ts-node": "^9.1.0",
     "typescript": "^3.9.7"
   },
   "eslintConfig": {
