@@ -13,7 +13,7 @@
   "author": "Vicente Canales <vicente@canales.io>",
   "license": "UNLICENSED",
   "dependencies": {
-    "fastify": "^3.6.0"
+    "fastify": "^3.11.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
