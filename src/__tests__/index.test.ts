@@ -1,30 +1,23 @@
-import Fastify from 'fastify';
-import start from '../';
+import { FastifyInstance } from 'fastify';
+import { build } from '../';
 
-describe('http server', () => {
-  let fastify: Fastify.FastifyInstance;
+describe('stuff', () => {
+  let app: FastifyInstance;
+  beforeAll(() => { app = build() });
+  afterAll(() => app.close());
 
-  beforeEach(async () => {
-    fastify = await start();
-  });
+  test('require / route', async () => {
 
-  afterEach(() => {
-    fastify.close();
-  });
 
-  test('GET /', () => {
     const expected = { hello: 'world' };
 
-    fastify.inject(
+    const response = await app.inject(
       {
         method: 'GET',
         url: '/',
-      },
-      (err, response) => {
-        expect(err).toBe(null);
-        expect(response.statusCode).toBe(200);
-        expect(JSON.parse(response.payload)).toEqual(expected);
-      },
+      }
     );
+    expect(response.statusCode).toEqual(200)
+    expect(JSON.parse(response.payload)).toEqual(expected)
   });
-});
+})
