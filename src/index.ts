@@ -9,15 +9,15 @@ export function build(options = {}): FastifyInstance {
     return { hello: 'world' };
   });
 
-  return app
+  return app;
 }
 
 const server = build({
   logger: {
     leve: 'info',
-    prettyPrint: true
-  }
-})
+    prettyPrint: true,
+  },
+});
 
 server.listen(parseInt(PORT), '0.0.0.0', (err, address) => {
   if (err) {
@@ -26,4 +26,3 @@ server.listen(parseInt(PORT), '0.0.0.0', (err, address) => {
 
   server.log.info(`Server listening on ${address}`);
 });
-
