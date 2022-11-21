@@ -13,7 +13,7 @@
   "author": "Vicente Canales <vicente@canales.io>",
   "license": "UNLICENSED",
   "dependencies": {
-    "fastify": "^3.24.0",
+    "fastify": "^3.29.4",
     "pino-pretty": "^7.2.0"
   },
   "devDependencies": {
